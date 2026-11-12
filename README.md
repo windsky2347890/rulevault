@@ -33,4 +33,6 @@ node scripts/check.mjs
 2. **内容托管**——`{{}}` 占位的内容都是需要你自己填的。编辑用 Obsidian 这类 Markdown 笔记工具，版本用 Git，同步用 WebDAV 就够。
 3. **替你判断**——只管该做的做了没有，其他时候只会做建议，决断还得你点头。
 
+更新日志见各档 `CHANGELOG.md`。
+
 MIT。

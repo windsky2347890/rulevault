@@ -35,4 +35,6 @@ No npm install.
 2. **Content hosting** — every `{{}}` placeholder is meant for you to fill in yourself. Edit in a Markdown tool like Obsidian, version with Git, sync over WebDAV.
 3. **Deciding for you** — it only checks whether the work that should be done was actually done. It can suggest, but every call still needs your approval.
 
+Changelog: see each tier's `CHANGELOG.md`.
+
 MIT.
