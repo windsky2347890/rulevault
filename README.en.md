@@ -2,9 +2,9 @@
 
 A script gatekeeper for AI-collaborated knowledge bases.
 
-As you work with an AI, your knowledge base grows. Without oversight, things start slipping — concepts you already explained get asked again, the AI invents answers you already have on disk, two sessions edit the same file and trample each other, a reply claims "updated" but the file was never touched.
+As you work with an AI, your knowledge base grows. Without oversight, things start slipping — concepts you explained last time get asked all over again, the AI invents answers you already have on disk, two sessions edit the same file and trample each other, a reply claims "updated" but the file was never touched.
 
-rulevault turns those failure modes into something a script can check. Did the session open by consulting the library? Did it take a lock before writing? Did it settle at the end? If something is missed, it fails right away. Pure Node ≥18 standard library, zero dependencies, no npm install.
+rulevault turns those failure modes into something a script can check. Did the session open by consulting the library? Did it take a lock before writing? Did it settle at the end? If something is missed, it fails right away. Pure Node ≥18 standard library, zero dependencies — works out of the box.
 
 ## The four principles
 
@@ -27,10 +27,12 @@ cd rulevault/lite
 node scripts/check.mjs
 ```
 
+No npm install.
+
 ## What it doesn't do
 
 1. **Vector search** — it needs external services, which conflicts with the zero-dependency promise. When your library grows, local embeddings + a vector store is the way (Ollama + LanceDB is a cheap option that costs no API).
 2. **Content hosting** — every `{{}}` placeholder is meant for you to fill in yourself. Edit in a Markdown tool like Obsidian, version with Git, sync over WebDAV.
-3. **Decision-making** — it only checks whether the work that should be done was actually done. It can suggest, but the call is yours.
+3. **Deciding for you** — it only checks whether the work that should be done was actually done. It can suggest, but every call is yours to approve.
 
 MIT.
