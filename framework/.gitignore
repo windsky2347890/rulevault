@@ -1,0 +1,23 @@
+# 运行时状态（用起来才产生，不随包发布）
+_AI/.写锁
+_AI/.开场证迹
+_AI/.会话身份
+_AI/.闸门留痕.log
+_AI/tmp/
+
+# 依赖（本包零外部包；语义检索可选升级才需要）
+node_modules/
+
+# 编辑器 / 系统
+.obsidian/
+*.canvas
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+_tmp*
+*.tmp
+*.bak
+~$*
+.tmp/

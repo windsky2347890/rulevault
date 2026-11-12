@@ -1,0 +1,19 @@
+# 临时文件
+_tmp*
+*.tmp
+*.bak
+~$*
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+.obsidian/
+*.canvas
+
+# 依赖（如果以后加了的话）
+node_modules/

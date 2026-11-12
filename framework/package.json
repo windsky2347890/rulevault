@@ -1,0 +1,16 @@
+{
+  "name": "rulevault",
+  "version": "1.0.0",
+  "description": "给 AI 协作知识库的脚本强制闸门与双档骨架——规则不是建议，是可执行的检查。零依赖，解压即用。",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "node scripts/lint-wiki.js",
+    "open": "node scripts/session-open.mjs",
+    "recall": "node scripts/recall.mjs"
+  },
+  "license": "MIT",
+  "private": false
+}
